@@ -1,0 +1,9 @@
+app:
+  image: node
+  working_dir: /app
+  volumes:
+    - .:/app
+  env_file:
+    - config.env
+  expose:
+    - "80"
